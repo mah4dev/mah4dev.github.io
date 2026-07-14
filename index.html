@@ -158,7 +158,7 @@ off the keyboard: shaivism, ancient egypt, psytrance.
     · etw / amsi patching      · malleable c2 profiles
     · multi-channel fallback
 
-  repo → https://github.com/mah4dev   [ edit: link the repo ]` }
+  repo → https://github.com/mah4dev` }
                 }
             },
 
@@ -168,24 +168,12 @@ off the keyboard: shaivism, ancient egypt, psytrance.
                         type: "file", content:
                             `writeups/ — ctf & lab notes
 
-  biscuit.md    hackingclub · multi-stage web chain
+  the full collection lives on the blog:
 
-   `},
-                    // [ add more writeups here ]
-                    "biscuit.md": {
-                        type: "file", content:
-                            `# biscuit — hackingclub  (web, multi-stage)
+    → https://writeups.trishul.re
 
-  a full exploitation chain, small bugs stacked into a shell:
-
-    1. php type juggling        → auth bypass
-    2. cookie forging           → session as admin
-    3. remote file inclusion    → webshell
-    4. python library hijacking → root
-
-  takeaway: every weak assumption is a doorway. chain them.
-
-  full writeup → https://writeups.trishul.re/writeups/biscuit/` }
+  ctf writeups, reversing notes, and lab chains —
+  published there, updated as i break things.` }
                 }
             },
 
@@ -466,7 +454,7 @@ Sgs0DQ==
 
         /* chips */
         const CHIPS = [
-            ["whoami", "whoami"], ["projects", "cd ~ && cd projects && ls"], ["writeups", "cd ~ && cd writeups && ls"],
+            ["whoami", "whoami"], ["projects", "cd ~ && cd projects && ls"], ["writeups", "cd ~ && cd writeups && cat README"],
             ["now", "cd ~ && cat now.txt"], ["contact", "cd ~ && cat contact.txt"], ["tree", "tree"], ["help", "help"]
         ];
         CHIPS.forEach(([label, command]) => {
