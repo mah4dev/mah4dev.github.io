@@ -117,6 +117,7 @@ off the keyboard: shaivism, ancient egypt, psytrance.
 
   > hackingclub ctf labs — web exploitation + privesc
   > x86-64 assembly — zhirkov, low-level programming
+  > Handcrafting PadaSentry — keylogger detection tool for Windows
   > red team roadmap → windows internals → AD → CRTO
 
   har har mahadev.` },
@@ -136,20 +137,19 @@ off the keyboard: shaivism, ancient egypt, psytrance.
                         type: "file", content:
                             `projects/ — selected work
 
-  hermes.md    c2 framework — node.js server + c# agent
-
-  [ add more: create files in projects/ in the source ]
+  Rudra.md    c2 framework — C
+  PadaSentry.md  KeyLogger Detection — C
 
   full list → https://github.com/0xtrishul` },
-                    "hermes.md": {
+                    "Rudra.md": {
                         type: "file", content:
-                            `# hermes — c2 framework
+                            `# Rudra — c2 framework
 
   a lightweight command-and-control framework, built to
   learn offensive tradecraft from the ground up.
 
   server   node.js / express
-  agent    c#
+  agent    C
   status   active development
 
   roadmap
@@ -158,7 +158,19 @@ off the keyboard: shaivism, ancient egypt, psytrance.
     · etw / amsi patching      · malleable c2 profiles
     · multi-channel fallback
 
-  repo → https://github.com/0xtrishul` }
+  repo → https://github.com/0xtrishul/Rudra` },
+                    "PadaSentry.md": {
+                        type: "file", content:
+                            `# PadaSentry — KeyLogger Detection
+
+  PadaSentry is a defensive security tool for Windows, written in C,
+  that detects keyloggers by monitoring the system for behaviors 
+  characteristic of keystroke capture.
+
+  status   active development
+
+  roadmap → https://writeups.trishul.re/writeups/padasentry/01-roadmap/
+  repo → https://github.com/0xtrishul/PadaSentry` }
                 }
             },
 
@@ -172,7 +184,7 @@ off the keyboard: shaivism, ancient egypt, psytrance.
 
     → https://writeups.trishul.re
 
-  ctf writeups, reversing notes, and lab chains —
+  ctf writeups, reversing notes, and tooling notes —
   published there, updated as i break things.` }
                 }
             },
